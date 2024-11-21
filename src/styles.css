@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'Consolas';
+  src: url(./fonts/consolas.ttf);
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  border: 0 solid transparent;
+  border-width: 0 22.5vh;
+  box-sizing: border-box; 
+}
+
+/* {
+  font-size: 16px;
+  font-family: roboto;
+  color: #000000;
+  position: relative; 
+  mask-image: linear-gradient(-75deg, rgb(30, 255, 0) 30%, #ea00ff 50%, rgba(0, 238, 255, 0.6) 70%);
+  mask-size: 200%;
+  animation: wave 2s infinite;
+  
+} */
+
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.activeLink {
+  border-bottom: 2px solid blue;
+}
+
+textarea {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+iframe {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.icon-check {
+  opacity: 0;
+}
+
+.icon {
+  transition: opacity 0.3s;
+}
+
+.removeButtonHTML.activeAnimationRemoveButton .icon-trash {
+  opacity: 0;
+}
+
+.removeButtonHTML.activeAnimationRemoveButton .icon-check {
+  opacity: 1;
+}
+
+.removeButtonHTML {
+  transition: 0.3s;
+}
+
+.hiddenFavourites {
+  display: none;
+}
+
+.visibleFavourites {
+  display: block;
+}
+
+.removeButtonCSS.activeAnimationRemoveButton .icon-trash {
+  opacity: 0;
+}
+
+.removeButtonCSS.activeAnimationRemoveButton .icon-check {
+  opacity: 1;
+}
+
+.removeButtonCSS {
+  transition: 0.3s;
+}
+
+.removeButtonJS.activeAnimationRemoveButton .icon-trash {
+  opacity: 0;
+}
+
+.removeButtonJS.activeAnimationRemoveButton .icon-check {
+  opacity: 1;
+}
+
+.removeButtonJS {
+  transition: 0.3s;
+}
+
+.icon-check {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+#lineNumbersHTML::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#lineNumbersCSS::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#lineNumbersJS::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#sectionDropMenu {
+  display: none;
+}
+
+#btnOpenWorks:hover #sectionDropMenu, 
+#btnOpenWorks:focus-within #sectionDropMenu { /* добавлено для улучшения доступности */
+  display: block;
+}
+
+/* Регистрация / Авторизация */
+
+
+.input {
+  font-family: 'Roboto';
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  border: 0.3vh solid rgb(179, 179, 179);
+}
+
+.inputErrorJS {
+  padding-top: 1.3vh;
+  padding-bottom: 1.3vh;
+  padding-left: 2.3vh;
+  padding-right: 2.3vh;
+  border: 0.3vh solid rgb(255, 0, 0);
+  border-radius: 0.3vh;
+  transition: .1s ease;
+}
+
+/* Всплывающие окна */
+
+.alert {
+  min-width: max-content;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  line-height: 1.8;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.alertCheckbox {
+  display: none;
+}
+
+:checked + .alert {
+  display: none;
+}
+
+.alertText {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.alertClose {
+  float: right;
+  padding-top: 5px;
+  font-size: 10px;
+}
+
+.error {
+  background-color: #FEE;
+  border: 1px solid #EDD;
+  color: #A66;
+}
+
+.good {
+  background-color: rgb(238, 255, 238);
+  border: 1px solid rgb(222, 238, 221);
+  color: rgb(108, 170, 102);
+}
+
+.border-r {
+  border-right-width: 2px solid gray;
+}
